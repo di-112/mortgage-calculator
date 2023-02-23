@@ -1,0 +1,22 @@
+.calculator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(21, 34, 66, 0.06);
+  padding: 20px 24px;
+  border-radius: 15px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.spin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(21, 34, 66, 0.06);
+  padding: 20px 24px;
+  border-radius: 15px;
+  height: 50vh;
+}

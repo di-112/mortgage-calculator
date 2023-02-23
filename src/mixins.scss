@@ -1,0 +1,27 @@
+@mixin pulse-slider($color, $size) {
+  @-webkit-keyframes pulse-slider {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 $color;
+    }
+    70% {
+      -webkit-box-shadow: 0 0 0 $size $color;
+    }
+    100% {
+      -webkit-box-shadow: 0 0 0 0 $color;
+    }
+  }
+  @keyframes pulse-slider {
+    0% {
+      -moz-box-shadow: 0 0 0 0 $color;
+      box-shadow: 0 0 0 0 $color;
+    }
+    50% {
+      -moz-box-shadow: 0 0 0 $size $color;
+      box-shadow: 0 0 0 $size $color;
+    }
+    100% {
+      -moz-box-shadow: 0 0 0 0 $color;
+      box-shadow: 0 0 0 0 $color;
+    }
+  }
+}

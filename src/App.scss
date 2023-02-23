@@ -1,0 +1,36 @@
+@import './mixins.scss';
+
+html {
+  --antd-wave-shadow-color: none;
+}
+
+.layout {
+  min-height: 100vh;
+}
+
+.site-layout-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ant-radio-group {
+  display: flex;
+}
+
+.ant-radio-button-wrapper {
+  background: rgba(21, 34, 66, 0.06);
+  transition: all 0.6s ease 0s;
+  margin: 0 5px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.ant-radio-button-wrapper:hover {
+  color: black;
+}
+
+.ant-slider-handle:active {
+  animation: pulse-slider 0.8s infinite ease
+}
+
+@include pulse-slider(rgba(9, 109, 217, 0.4), 7px);

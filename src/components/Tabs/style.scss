@@ -1,0 +1,35 @@
+.tab {
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  &:after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #1890ff;
+    transition: width 0.4s ease-in-out;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.ant-tabs-tab {
+  border-radius: 15px !important;
+  padding: 10px 30px !important;
+  &:hover {
+    color: #1890ff;
+    .tab:after,
+    .tab:after {
+      width: 100%;
+    }
+  }
+}
+
+.ant-tabs-tab-active {
+  .tab:after,
+  .tab:after {
+    width: 100%;
+  }
+}
