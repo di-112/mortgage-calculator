@@ -17,7 +17,7 @@ const Buttons = ({
     : defaultValue
 
   const onClickHandler = value => {
-    setValue(name, dependenceField ? calculatePercent(getValues(dependenceField), value) : name)
+    setValue(name, dependenceField ? calculatePercent(getValues(dependenceField), value) : value)
   }
 
   if (!buttonsValue) return null
